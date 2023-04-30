@@ -1,0 +1,164 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn9 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn9 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn10 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn10 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn11 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn11 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn12 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn12 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn13 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn13 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn14 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn14 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn15 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn15 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn16 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn16 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.saveBtn17 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn17 i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+

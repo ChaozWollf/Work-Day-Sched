@@ -42,20 +42,22 @@ $(function () {
 //set the local text element to any thing stored in local storage associated with that element
 const dait=$('#currentDay')
 const nine = $('#hour-9');
-
+const description9 = $('.description9')
 function timeset() {}
 
 
 
-$(descrip9).ready(function () {
-  localStorage.setItem(descrip9, );
 
+
+$(document).ready(function () {
+  localStorage.setItem(description9, description9.val());
+});
 
 $('.saveBtn9').on('click', function () {
-  saveData9
-  ;
+  description9;
+})
   
-});
+
 $('.saveBtn10').on('click', function () {
   console.log("it worked!!");
 });

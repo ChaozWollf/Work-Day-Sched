@@ -4,8 +4,8 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html. ___Use $(document).ready()____
-$(function () { 
-  console.log() })
+// $(function () { 
+//   console.log() })
   
   
   
@@ -40,46 +40,162 @@ $(function () {
 //have to use the localStorage.setItem with JSON.stringify to save the notes
 
 //set the local text element to any thing stored in local storage associated with that element
-const dait=$('#currentDay')
+
+
+
+
+
+
+const dait=$('#currentDay');
 const nine = $('#hour-9');
-const description9 = $('.description9')
-function timeset() {}
+const description9 = $('.description9');
+const description10 = $('.description10');
+const description11 = $('.description11');
+const description12 = $('.description12');
+const description13 = $('.description13');
+const description14 = $('.description14');
+const description15 = $('.description15');
+const description16 = $('.description16');
+const description17 = $('.description17');
+const today = dayjs();
+const currenthour = dayjs().format('HH:mm:ss');
+
+
+$('#currentDay').text(today.format('MMM D, YYYY'));
 
 
 
+const time9 = window.setInterval(function () {
+  var hours9 = dayjs('09:00:00', 'HH:mm:ss');
+  var end9 = dayjs('09:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours9) && dayjs(currenthour, 'HH:mm:ss').isBefore(end9)) {
+    $(".hour-9").removeClass("future").addClass("present");
+    $(".hour-17").removeClass("past").addClass("future");
+  }
+}, 1000);
+
+const time10 = window.setInterval(function () {
+  var hours10 = dayjs('10:00:00', 'HH:mm:ss');
+  var end10 = dayjs('10:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours10) && dayjs(currenthour, 'HH:mm:ss').isBefore(end10)) {
+    $(".hour-9").removeClass("present").addClass("past");
+    $(".hour-10").removeClass("future").addClass("present");
+  }
+}, 1000);
 
 
-$(document).ready(function () {
-  localStorage.setItem(description9, description9.val());
-});
+const time11 = window.setInterval(function () {
+  var hours11 = dayjs('11:00:00', 'HH:mm:ss');
+  var end11 = dayjs('11:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours11) && dayjs(currenthour, 'HH:mm:ss').isBefore(end11)) {
+    $(".hour-10").removeClass("present").addClass("past");
+    $(".hour-11").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time12 = window.setInterval(function () {
+  var hours12 = dayjs('12:00:00', 'HH:mm:ss');
+  var end12 = dayjs('12:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours12) && dayjs(currenthour, 'HH:mm:ss').isBefore(end12)) {
+    $(".hour-11").removeClass("present").addClass("past");
+    $(".hour-12").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time13 = window.setInterval(function () {
+  var hours13 = dayjs('13:00:00', 'HH:mm:ss');
+  var end13 = dayjs('13:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours13) && dayjs(currenthour, 'HH:mm:ss').isBefore(end13)) {
+    $(".hour-12").removeClass("present").addClass("past");
+    $(".hour-13").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time14 = window.setInterval(function () {
+  var hours14 = dayjs('14:00:00', 'HH:mm:ss');
+  var end14 = dayjs('14:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours14) && dayjs(currenthour, 'HH:mm:ss').isBefore(end14)) {
+    $(".hour-13").removeClass("present").addClass("past");
+    $(".hour-14").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time15 = window.setInterval(function () {
+  var hours15 = dayjs('15:00:00', 'HH:mm:ss');
+  var end15 = dayjs('15:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours15) && dayjs(currenthour, 'HH:mm:ss').isBefore(end15)) {
+    $(".hour-14").removeClass("present").addClass("past");
+    $(".hour-15").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time16 = window.setInterval(function () {
+  var hours16 = dayjs('16:00:00', 'HH:mm:ss');
+  var end16 = dayjs('16:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours16) && dayjs(currenthour, 'HH:mm:ss').isBefore(end16)) {
+    $(".hour-15").removeClass("present").addClass("past");
+    $(".hour-16").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time17 = window.setInterval(function () {
+  var hours17 = dayjs('17:00:00', 'HH:mm:ss');
+  var end17 = dayjs('17:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours17) && dayjs(currenthour, 'HH:mm:ss').isBefore(end17)) {
+    $(".hour-16").removeClass("present").addClass("past");
+    $(".hour-17").removeClass("future").addClass("present");
+  }
+}, 1000);
+
+const time18 = window.setInterval(function () {
+  var hours18 = dayjs('18:00:00', 'HH:mm:ss');
+  var end18 = dayjs('23:59:59', 'HH:mm:ss');
+  if (dayjs(currenthour, 'HH:mm:ss').isAfter(hours18) && dayjs(currenthour, 'HH:mm:ss').isBefore(end18)) {
+    $(".hour-17").removeClass("present").addClass("past");
+    $(".hour-9").removeClass("past").addClass("future");
+    $(".hour-10").removeClass("past").addClass("future");
+    $(".hour-11").removeClass("past").addClass("future");
+    $(".hour-12").removeClass("past").addClass("future");
+    $(".hour-13").removeClass("past").addClass("future");
+    $(".hour-14").removeClass("past").addClass("future");
+    $(".hour-15").removeClass("past").addClass("future");
+    $(".hour-16").removeClass("past").addClass("future");
+    
+
+  }
+}, 1000);
+
+
+
 
 $('.saveBtn9').on('click', function () {
-  description9;
-})
+  localStorage.setItem('description9', description9.val());
+});
   
 
 $('.saveBtn10').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description10', description10.val());
 });
 $('.saveBtn11').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description11', description11.val());
 });
 $('.saveBtn12').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description12', description12.val());
 });
 $('.saveBtn13').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description13', description13.val());
 });
 $('.saveBtn14').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description14', description14.val());
 });
 $('.saveBtn15').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description15', description15.val());
 });
 $('.saveBtn16').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description16', description16.val());
 });
 
 $('.saveBtn17').on('click', function () {
-  console.log("it worked!!");
+  localStorage.setItem('description17', description17.val());
 });
+;
